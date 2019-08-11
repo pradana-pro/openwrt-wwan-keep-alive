@@ -26,6 +26,14 @@ The Major difference to the original:
    Write an own readme.
    
 Plans for a far future:
+   Maybe make configuration UCI compatible.
+   
+   Ceate a LUCI webpage for configuration.
+   
+   Merge scripts into a single one.
+   
+   Create an OPKG file to get it work with the software management of OpenWRT.
+   
 # OpenWRT LTE Keep-alive scripts
 
 ![OpenWRT logo](https://raw.githubusercontent.com/mchsk/openwrt-lte-keep-alive/assets/images/openwrt.png)
