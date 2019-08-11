@@ -1,3 +1,31 @@
+This is my fork of mchsks's lte-keep-alive scripts for openwrt. Thanks for this great work at this place. Please keep in mind this is a quick and dirty fork of an low experienced computer-enthusiast. Ideas and suggestions are very welcome, constructive criticism also.
+
+The Major difference to the original:
+   Keep Alive script is started as daemon and can be enabled or disabled via LUCI.
+   You dont need to use CRON anymore.
+   
+   Because of the changes the 2 minutes between the connection test are written in the script. If you want to change this you 
+   have to edit wwan-keep-alive.sh at line 45.
+   
+   To prevent reboot loop, wwan-keep-alive.sh waits 3 minutes before reboot if connection fails 4 times.
+   
+   I changed the server for DNS-tests from 8.8.8.8 (Google) to 1.1.1.1 (Cloudflare) because of my personal preference.
+   
+   The use of my initscript makes it necessary to place the scripts in /usr/wwan-keep-alive.
+   
+ Plans for the future:
+   Store & read settings like:
+   -Logsizes (wwan-keep-alive.sh)
+   -Waittimes (wwan-keep-alive.sh)
+   -DNS-Test server (dns-test.sh)
+   -Interface name (restart-interface.sh)
+   from a config file.
+   
+   Change install.sh to work with my fork.
+   
+   Write an own readme.
+   
+Plans for a far future:
 # OpenWRT LTE Keep-alive scripts
 
 ![OpenWRT logo](https://raw.githubusercontent.com/mchsk/openwrt-lte-keep-alive/assets/images/openwrt.png)
