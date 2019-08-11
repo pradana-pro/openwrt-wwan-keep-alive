@@ -1,0 +1,21 @@
+#!/bin/sh /etc/rc.common
+# Wwan-keep-alive initscript
+# Copyright (C) 2007 OpenWrt.org
+
+START=99
+STOP=15
+PIDFILE=/var/pids/wwan-keep-alive.pid
+PIDDIR=/var/pids
+BINFILE=/usr/wwan-keep-alive/wwan-keep-alive.sh
+
+start() {
+	[ -d $PIDDIR ] || mkdir -p $PIDDIR
+	[ -f $PIDFILE ] && exit 1
+	$BINFILE 2>&1 >/dev/null &
+	echo $! > $PIDFILE
+}
+
+stop() {
+	kill `cat $PIDFILE`
+	rm $PIDFILE
+}
