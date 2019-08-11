@@ -1,4 +1,8 @@
-This is my fork of mchsks's lte-keep-alive scripts for openwrt. Thanks for this great work at this place. Please keep in mind this is a quick and dirty fork of an low experienced computer-enthusiast. Ideas and suggestions are very welcome, constructive criticism also.
+This is my fork of mchsks's lte-keep-alive scripts for OpenWRT. Thanks for this great work at this place. Please keep in mind this is a quick and dirty fork of an low experienced computer-enthusiast. Ideas and suggestions are very welcome, constructive criticism also.
+
+To install run this via ssh:
+
+	`wget -q --no-check-certificate https://raw.githubusercontent.com/helplessheadless/openwrt-lte-keep-alive/assets/install.sh -O install.sh && chmod +x install.sh && ./install.sh`
 
 The Major difference to the original:
    Keep Alive script is started as daemon and can be enabled or disabled via LUCI.
@@ -25,6 +29,7 @@ The Major difference to the original:
    
    Write an own readme.
    
+   
 Plans for a far future:
    Maybe make configuration UCI compatible.
    
@@ -34,6 +39,7 @@ Plans for a far future:
    
    Create an OPKG file to get it work with the software management of OpenWRT.
    
+Original README.md:   
 # OpenWRT LTE Keep-alive scripts
 
 ![OpenWRT logo](https://raw.githubusercontent.com/mchsk/openwrt-lte-keep-alive/assets/images/openwrt.png)
