@@ -9,11 +9,11 @@ The Major difference to the original:
    You dont need to use CRON anymore.
    
    Because of the changes the 2 minutes between the connection test are written in the script. If you want to change this you 
-   have to edit wwan-keep-alive.sh at line 45.
+   have to edit wwan-keep-alive.sh at line 42.
    
-   To prevent reboot loop, wwan-keep-alive.sh waits 3 minutes before reboot if connection fails 4 times.
+   To prevent reboot loop, wwan-keep-alive.sh waits 2 minutes before reboot if connection fails 4 times.
    
-   I changed the server for DNS-tests from 8.8.8.8 (Google) to 1.1.1.1 (Cloudflare) because of my personal preference.
+   I changed the server for DNS-tests to 8.8.8.8 (Google) because of my personal preference.
    
    The use of my initscript makes it necessary to place the scripts in /usr/wwan-keep-alive.
    
