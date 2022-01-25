@@ -20,9 +20,13 @@ Perbedaan utama dengan aslinya:
    
  Konfigurasinya ada di:
    -Logsizes (wwan-keep-alive.sh)
+   
    -Waittimes (wwan-keep-alive.sh)
+   
    -DNS-Test server (dns-test.sh)
+   
    -Interface name (restart-interface.sh)
+   
    Ada di folder /usr/wwan-keep-alive
    
    
