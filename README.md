@@ -1,11 +1,9 @@
 This is my fork of mchsks's lte-keep-alive scripts for OpenWRT. Thanks for this great work at this place. Please keep in mind this is a quick and dirty fork of an low experienced computer-enthusiast. Ideas and suggestions are very welcome, constructive criticism also.
 
-To install run this via ssh:
-
-	```sh
-	bash -c "$(curl -sko - 'https://raw.githubusercontent.com/r3yr3/openwrt-wwan-keep-alive/master/install.sh')"
-	```
-
+- Run installation script:
+```sh
+bash -c "$(curl -sko - 'https://raw.githubusercontent.com/r3yr3/openwrt-wwan-keep-alive/master/install.sh')"
+```
 The Major difference to the original:
    Keep Alive script is started as daemon and can be enabled or disabled via LUCI.
    You dont need to use CRON anymore.
