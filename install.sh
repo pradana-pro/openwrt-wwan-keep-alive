@@ -22,8 +22,6 @@ finish(){
 #    echo "   To change the interface, please edit the line INTERFACE='wwan' in the 'restart-interface.sh'."
     echo ""
     echo "Enjoy!"
-
-    rm install.sh
 }
 
 download_files()
