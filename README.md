@@ -27,8 +27,7 @@ Perbedaan utama dengan aslinya:
    Untuk melihat log via terminal/cmd: cat /usr/wwan-keep-alive/log.txt
    
    
-Original README.md:   
-# OpenWRT LTE Keep-alive scripts
+Original README.md:<br># OpenWRT LTE Keep-alive scripts
 
 ![OpenWRT logo](https://raw.githubusercontent.com/mchsk/openwrt-lte-keep-alive/assets/images/openwrt.png)
 ![How it looks](https://raw.githubusercontent.com/mchsk/openwrt-lte-keep-alive/assets/images/screenshot1.png)
