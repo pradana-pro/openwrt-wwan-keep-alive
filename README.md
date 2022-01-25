@@ -9,8 +9,7 @@ Perbedaan utama dengan aslinya:
    
    Durasinya tiap 2 menit tes koneksi. Jika Anda ingin mengubah ini,<br>Anda harus mengedit wwan-keep-alive.sh di baris ke 42.
    
-   Untuk mencegah loop reboot router, wwan-keep-alive.sh menunggu 3 menit sebelum reboot router jika koneksi gagal 4 kali.
-   Ini bisa di edit di baris ke 33
+   Untuk mencegah loop reboot router, wwan-keep-alive.sh menunggu 3 menit sebelum reboot router jika koneksi gagal 4 kali.<br>Ini bisa di edit di baris ke 33
    
    
    Saya mengubah server untuk tes DNS menjadi 8.8.8.8 (Google) karena preferensi pribadi saya.
