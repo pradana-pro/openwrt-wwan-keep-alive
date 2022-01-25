@@ -16,10 +16,10 @@ finish(){
 #    echo "There are 2 important steps to finish this setup:"
 #    echo ""
 #    echo "1. Make sure this line is in the cron. To open the cron editor, run: crontab -e"
-#    echo "   */2 * * * * $DIR/internet-keep-alive.sh"
+#    echo "   */2 * * * * $DIR/wwan-keep-alive.sh"
 #    echo ""  
-#    echo "2. The interface representing the LTE connection is set to 'wwan'."
-#    echo "   To change the interface, please edit the line INTERFACE='wwan' in the 'restart-interface.sh'."
+#    echo "2. The interface representing the LTE connection is set to 'wwan0'."
+#    echo "   To change the interface, please edit the line INTERFACE='wwan0' in the 'restart-interface.sh'."
     echo ""
     echo "Enjoy!"
 }
