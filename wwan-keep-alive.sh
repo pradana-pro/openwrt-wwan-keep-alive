@@ -39,6 +39,6 @@ until [  ];do
 	else
 		echo "We're okay!"
 		echo "$(date) ONLINE" >> $LOG_FILE
-		sleep 2m
+		sleep 1m
 	fi
 done
