@@ -41,7 +41,7 @@ download_files()
 }
 
 echo ""
-
+echo "REYRE-STB wwankeepalive scripts."
 
 while true; do
     read -p "This will install netcat as a prerequisite. Do you want to continue (y/n)? " yn
