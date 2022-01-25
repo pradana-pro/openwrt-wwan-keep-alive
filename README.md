@@ -4,11 +4,10 @@ Ini adalah fork dari helplessheadless lte-keep-alive untuk OpenWRT.
 bash -c "$(curl -sko - 'https://raw.githubusercontent.com/r3yr3/openwrt-wwan-keep-alive/master/install.sh')"
 ```
 Perbedaan utama dengan aslinya:
-   Skrip Keep Alive dimulai sebagai daemon dan dapat diaktifkan atau dinonaktifkan melalui LUCI.
+   Skrip Keep Alive dimulai sebagai daemon dan dapat diaktifkan atau dinonaktifkan melalui LUCI.<br>
    Anda tidak perlu menggunakan CRON lagi.
    
-   Durasinya tiap 2 menit tes koneksi. Jika Anda ingin mengubah ini, Anda
-   harus mengedit wwan-keep-alive.sh di baris ke 42.
+   Durasinya tiap 2 menit tes koneksi. Jika Anda ingin mengubah ini,<br>Anda harus mengedit wwan-keep-alive.sh di baris ke 42.
    
    Untuk mencegah loop reboot router, wwan-keep-alive.sh menunggu 3 menit sebelum reboot router jika koneksi gagal 4 kali.
    Ini bisa di edit di baris ke 33
@@ -21,10 +20,8 @@ Perbedaan utama dengan aslinya:
  Konfigurasinya ada di:
  
    -Logsizes (wwan-keep-alive.sh)<br>
-   -Waittimes (wwan-keep-alive.sh)
-   
-   -DNS-Test server (dns-test.sh)
-   
+   -Waittimes (wwan-keep-alive.sh)<br>
+   -DNS-Test server (dns-test.sh)<br>
    -Interface name (restart-interface.sh)
    
    Ada di folder /usr/wwan-keep-alive</br>
