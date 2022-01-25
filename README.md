@@ -7,10 +7,10 @@ Perbedaan utama dengan aslinya:
    Skrip Keep Alive dimulai sebagai daemon dan dapat diaktifkan atau dinonaktifkan melalui LUCI.
    Anda tidak perlu menggunakan CRON lagi.
    
-   Durasinya tiap 1 menit tes koneksi. Jika Anda ingin mengubah ini, Anda
+   Durasinya tiap 2 menit tes koneksi. Jika Anda ingin mengubah ini, Anda
    harus mengedit wwan-keep-alive.sh di baris ke 42.
    
-   Untuk mencegah loop reboot router, wwan-keep-alive.sh menunggu 2 menit sebelum reboot router jika koneksi gagal 4 kali.
+   Untuk mencegah loop reboot router, wwan-keep-alive.sh menunggu 3 menit sebelum reboot router jika koneksi gagal 4 kali.
    Ini bisa di edit di baris ke 33
    
    
