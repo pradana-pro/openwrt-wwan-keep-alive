@@ -29,6 +29,7 @@ Perbedaan utama dengan aslinya:
    -Interface name (restart-interface.sh)
    
    Ada di folder /usr/wwan-keep-alive
+   Untuk melihat log via terminal/cmd: cat /usr/wwan-keep-alive/log.txt
    
    
 Original README.md:   
