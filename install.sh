@@ -41,7 +41,7 @@ download_files()
 }
 
 echo ""
-echo "REYRE-STB Keep-alive scripts."
+echo "OpenWRT Keep-alive scripts."
 
 while true; do
     read -p "This will install netcat as a prerequisite. Do you want to continue (y/n)? " yn
