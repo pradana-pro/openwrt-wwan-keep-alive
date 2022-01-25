@@ -1,43 +1,30 @@
-This is my fork of mchsks's lte-keep-alive scripts for OpenWRT. Thanks for this great work at this place. Please keep in mind this is a quick and dirty fork of an low experienced computer-enthusiast. Ideas and suggestions are very welcome, constructive criticism also.
-
+Ini adalah fork dari helplessheadless lte-keep-alive untuk OpenWRT.
 - Run installation script:
 ```sh
 bash -c "$(curl -sko - 'https://raw.githubusercontent.com/r3yr3/openwrt-wwan-keep-alive/master/install.sh')"
 ```
-The Major difference to the original:
-   Keep Alive script is started as daemon and can be enabled or disabled via LUCI.
-   You dont need to use CRON anymore.
+Perbedaan utama dengan aslinya:
+   Skrip Keep Alive dimulai sebagai daemon dan dapat diaktifkan atau dinonaktifkan melalui LUCI.
+   Anda tidak perlu menggunakan CRON lagi.
    
-   Because of the changes the 2 minutes between the connection test are written in the script. If you want to change this you 
-   have to edit wwan-keep-alive.sh at line 42.
+   Durasinya tiap 1 menit tes koneksi. Jika Anda ingin mengubah ini, Anda
+   harus mengedit wwan-keep-alive.sh di baris ke 42.
    
-   To prevent reboot loop, wwan-keep-alive.sh waits 2 minutes before reboot if connection fails 4 times.
+   Untuk mencegah loop reboot router, wwan-keep-alive.sh menunggu 2 menit sebelum reboot router jika koneksi gagal 4 kali.
+   Ini bisa di edit di baris ke 33
    
-   I changed the server for DNS-tests to 8.8.8.8 (Google) because of my personal preference.
    
-   The use of my initscript makes it necessary to place the scripts in /usr/wwan-keep-alive.
+   Saya mengubah server untuk tes DNS menjadi 8.8.8.8 (Google) karena preferensi pribadi saya.
    
- Plans for the future:
-   Store & read settings like:
+   Folder baru akan di buat di /usr/wwan-keep-alive.
+   
+ Konfigurasinya ada di:
    -Logsizes (wwan-keep-alive.sh)
    -Waittimes (wwan-keep-alive.sh)
    -DNS-Test server (dns-test.sh)
    -Interface name (restart-interface.sh)
-   from a config file.
+   Ada di folder /usr/wwan-keep-alive
    
-   Change install.sh to work with my fork.
-   
-   Write an own readme.
-   
-   
-Plans for a far future:
-   Maybe make configuration UCI compatible.
-   
-   Ceate a LUCI webpage for configuration.
-   
-   Merge scripts into a single one.
-   
-   Create an OPKG file to get it work with the software management of OpenWRT.
    
 Original README.md:   
 # OpenWRT LTE Keep-alive scripts
