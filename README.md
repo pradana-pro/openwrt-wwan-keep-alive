@@ -19,6 +19,7 @@ Perbedaan utama dengan aslinya:
    Folder baru akan di buat di /usr/wwan-keep-alive.
    
  Konfigurasinya ada di:
+ 
    -Logsizes (wwan-keep-alive.sh)
    
    -Waittimes (wwan-keep-alive.sh)
